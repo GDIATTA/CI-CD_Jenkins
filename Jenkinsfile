@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker { image 'node:18-alpine' } } // garantit Node/npm
+  agent any
   stages {
     stage('Checkout') {
       steps { checkout scm } // configure SCM Git dans le job
